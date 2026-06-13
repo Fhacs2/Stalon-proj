@@ -18,13 +18,13 @@ $web_email = WEB_EMAIL;
 
 // Set database Below
 function dbConnect(){
-    $servername = "aws-1-eu-central-1.pooler.supabase.com";
+    $servername = "process.env.POSTGRES_URL";
     //Change Database Username "root"
-    $username = "postgres.ffunxmhkhahkxpgbwsog"; 
+    $username = "process.env.POSTGRES_USER"; 
     //Change Database Password ""
-    $password = "Olisuru005.";
+    $password = "process.env.POSTGRES_PASSWORD";
     //Change Database ""
-    $database = "postgres";
+    $database = "process.env.POSTGRES_DATABASE";
     //Do not edit... That's all
     $dns = "mysql:host=$servername;dbname=$database";
 
